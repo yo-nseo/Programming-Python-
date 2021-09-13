@@ -1,9 +1,12 @@
+from baseball_game_engine import make_answer, check
+
 answer = make_answer()
-print(answer)
+# print(answer)
 # 무한 반복
 while True:
     # 숫자 묻자
     guess = input("뭘까 ? : ")
+    guess_int = int(guess)
     # strike, ball 판정하자
     strike, ball = check(guess, answer)
     print(f'{guess}\tstrike : {strike}, ball: {ball}')

@@ -1,11 +1,10 @@
 import random
 
 # 정답 만들자 : 0 ~ 9 숫자 세개 뽑자
-# def make_answer():
-#     list_r = random.sample(range(9 + 1), 3)
-#     return "".join(map(str, list_r))
 def make_answer():
-    return "381"
+    list_r = random.sample(range(9 + 1), 3)
+    return "".join(map(str, list_r))
+
 
 def check(guess, answer):
     strike = 0
