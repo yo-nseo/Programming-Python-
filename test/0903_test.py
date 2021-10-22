@@ -25,15 +25,15 @@ print(random.randrange(1, 46))
 print(random.randrange(1, 46))
 '''
 
-# import random
-#
-# alist = []  # 뽑은 a를 넣어 중복 방지해주는 리스트
-# for i in range(3):
-#     a = random.randint(1, 9)
-#     while a in alist:  # a가 이미 뽑은 리스트에 있을 때까지 다시 뽑자
-#         a = random.randint(1, 9)
-#     alist.append(a)  # 새로운 a 값을 리스트에 추가
-# print(alist)
+import random
+
+alist = []  # 뽑은 a를 넣어 중복 방지해주는 리스트
+for i in range(3):
+    a = random.randint(1, 9)
+    while a in alist:  # a가 이미 뽑은 리스트에 있을 때까지 다시 뽑자
+        a = random.randint(1, 9)
+    alist.append(a)  # 새로운 a 값을 리스트에 추가
+print(alist)
 
 '''
 import datetime
@@ -43,6 +43,7 @@ diff = day2 - day1
 print(diff)
 '''
 
+'''
 # 8. 랜덤하게 번호로 자리를 배치하는 방법은? 제적(전출, 자퇴) 인원이 있다면?
 
 import random
@@ -70,3 +71,4 @@ random.shuffle(list_class)
 print('자리\t학생번호')
 for i, number in enumerate(list_class):
     print(f'{i + 1}\t{number}')
+'''
