@@ -16,7 +16,7 @@ class contentsBook:
         self.bookstore = ''
         # printstate
         self.p_state = ''
-        self.p_bookstore= ''
+        self.p_bookstore = ''
 
     # 서점 설정
     def set_bookstore(self):

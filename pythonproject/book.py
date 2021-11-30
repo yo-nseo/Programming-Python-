@@ -5,6 +5,7 @@ class Book:
         self.book_list = []
         self.store_list = []
         self.location_list = []
+        self.init_book()
 
     def add_book(self):  # 책 새로 추가
         # 책 추가
@@ -54,3 +55,14 @@ class Book:
 
         if len(searched_store) == 0:
             print("서점에 등록된 책이 없습니다.")
+
+
+    def init_book(self):
+        hgp = contentsBook()
+        hgp.title = '혼자 공부하는 파이썬'
+        hgp.writer = '윤인성'
+        hgp.year = '2019'
+        hgp.original_price = '18000'
+        hgp.p_state = '매우 좋음'
+        hgp.p_bookstore = '관악점'
+        self.book_list.append(hgp)
