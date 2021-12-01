@@ -1,5 +1,5 @@
 from tkinter import *
-#import main_GUI3
+import main_GUI
 
 oldBook_login = Tk()
 
@@ -16,7 +16,7 @@ def check_data():
     if user_id.get() == "admin" and user_pw.get() == "1234":
         print("Login Successfully")
         oldBook_login.destroy()
-        #main_GUI.main_gui()
+        main_GUI.main_gui()
     else:
         print("Check your id / password")
 

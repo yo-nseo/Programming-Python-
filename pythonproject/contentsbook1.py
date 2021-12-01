@@ -1,4 +1,4 @@
-class contentsBook:
+class contentsBook1:
     def __init__(self, title, writer, original_price, state):
         # 제목
         self.title = title
